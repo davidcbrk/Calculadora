@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import { Text, View, TouchableOpacity, Button, StyleSheet } from 'react-native';
 
 export default function App() {
   // Mapeamento de teclas
@@ -66,7 +66,7 @@ export default function App() {
       <View style={styles.results}>
         <Text style={styles.historyText}>{lastNumber}</Text>
         <Text style={styles.resultText}>{currentNumber}</Text>
-      <View>
+      </View>
 
       {/* Area onde os botões são exibidos*/}
       <View style={styles.buttons}>
@@ -94,14 +94,14 @@ const styles = StyleSheet.create({
   results: {
     flex: 2,
     justifyContent: "center",
-    backgroundColor: "#f5f5f5"
+    backgroundColor: "#f5f5f5",
   },
   resultText: {
     color: "#282F38",
     fontSize: 32,
     fontWeight: "bold",
     padding: 12,
-    textAlign: "right"
+    textAlign: "right",
   },
   historyText:{
     color: "#7c7c7c",
@@ -124,5 +124,6 @@ const styles = StyleSheet.create({
   textButton: {
     color: "#7c7c7c",
     fontSize: 20,
-  } 
+  },
+
 });
